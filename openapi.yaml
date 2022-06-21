@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 1.0.0
+  version: 0.1.0
   title: Open beers API
   description: |
     This API make available information about craft beer
@@ -117,13 +117,14 @@ components:
           type: string
           maxLength: 7
           minLength: 7
-          pattern: "[0-1][0-9]\/[1-2][0-9]{3}"
+          pattern: '[0-1][0-9]\/[1-2][0-9]{3}'
           example: "09/2007"
           nullable: false
         description:
           type: string
           maxLength: 1000
-          example: "A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once."
+          example: |
+            "A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once."
           nullable: true
         image_url:
           type: string
@@ -502,7 +503,7 @@ components:
         type: string
         maxLength: 7
         minLength: 7
-        pattern: "[0-1][0-9]\/[1-2][0-9]{3}"
+        pattern: '[0-1][0-9]\/[1-2][0-9]{3}'
         example: "09/2007"
     brewed_after:
       name: brewed_after
@@ -513,7 +514,7 @@ components:
         type: string
         maxLength: 7
         minLength: 7
-        pattern: "[0-1][0-9]\/[1-2][0-9]{3}"
+        pattern: '[0-1][0-9]\/[1-2][0-9]{3}'
         example: "09/2007"
     hops:
       name: hops
